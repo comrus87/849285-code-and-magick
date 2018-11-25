@@ -38,6 +38,6 @@ window.renderStatistics = function (ctx, players, times) {
 
   for (var i = 0; i < players.length; i++) {
     ctx.fillText(players[i], CLOUD_X + GAP + (BAR_GAP + BAR_WIDTH) * i, CLOUD_Y + CLOUD_HEIGHT - GAP);
-    ctx.fillRect(CLOUD_X + GAP + (BAR_WIDTH + (BAR_GAP) * i, CLOUD_Y + CLOUD_HEIGHT - (GAP * 2 + FONT_HEIGHT), (BAR_WIDTH, BAR_HEIGHT * times[i]) / maxTime));
+    ctx.fillRect(CLOUD_X + GAP + (BAR_WIDTH + BAR_GAP) * i, CLOUD_Y + CLOUD_HEIGHT - (GAP * 2 + FONT_HEIGHT), (BAR_WIDTH, BAR_HEIGHT * times[i]) / maxTime);
   }
 };
